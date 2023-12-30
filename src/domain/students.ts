@@ -1,4 +1,4 @@
-import { Parents } from "./parents";
+import { Parents } from "./parents.js";
 
 export class Student {
     

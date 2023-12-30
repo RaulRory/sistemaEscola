@@ -1,5 +1,4 @@
-import { ClassRepository } from "../../repository/classRepository";
-
+import { ClassRepository } from "../../repository/classRepository.js";
 export class ListClass {
     constructor(readonly classRepository: ClassRepository) {
         this.classRepository = classRepository;

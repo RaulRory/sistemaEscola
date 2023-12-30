@@ -1,4 +1,4 @@
-import { Teacher } from "../../domain/teacher";
+import { Teacher } from "../../domain/teacher.js";
 
 export interface DataTeacherProps {
     name: string;
@@ -14,5 +14,5 @@ export interface DataTeacherProps {
 
 export interface TeacherRepository {
     create(dataTeacher: DataTeacherProps): Promise<Teacher>;
-    listAll(): Promise<Teacher[]>;
+    listAll(): unknown[];
 }

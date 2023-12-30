@@ -1,4 +1,4 @@
-import fastify from "./infra/api";
+import fastify from "./infra/api.js";
 
 const start = async () => {
     try {

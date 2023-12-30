@@ -1,4 +1,4 @@
-import { Class } from "../../domain/class";
+import { Class } from "../../domain/class.js";
 
 export interface DataClassProps {
     nameTeacher: string;
@@ -6,6 +6,6 @@ export interface DataClassProps {
 }
 
 export interface ClassRepository {
-    create (dataClass: DataClassProps): Promise<Class>;
-    listAll (): Promise<Class[]>;
+    create (dataClass: DataClassProps): Class;
+    listAll (): unknown[];
 }

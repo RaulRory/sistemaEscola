@@ -1,4 +1,4 @@
-import { DataParentsProps, ParentsRepository } from "../../repository/parentsRepository";
+import { DataParentsProps, ParentsRepository } from "../../repository/parentsRepository.js";
 
 export class CreateParents {
     constructor(readonly parentsRepository: ParentsRepository) {

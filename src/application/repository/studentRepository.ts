@@ -1,5 +1,5 @@
-import { Parents } from "../../domain/parents";
-import { Student } from "../../domain/students";
+import { Parents } from "../../domain/parents.js";
+import { Student } from "../../domain/students.js";
 
 export interface DataStudentProps {
     name: string;
@@ -15,5 +15,5 @@ export interface DataStudentProps {
 
 export interface StudentRepository {
     create(dataStudent: DataStudentProps): Promise<Student>;
-    listAll(): Promise<Student[]>;
+    listAll(): unknown[];
 }

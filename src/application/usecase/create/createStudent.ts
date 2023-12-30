@@ -1,4 +1,4 @@
-import { DataStudentProps, StudentRepository } from "../../repository/studentRepository";
+import { DataStudentProps, StudentRepository } from "../../repository/studentRepository.js";
 
 export class CreateStudent {
     constructor(readonly studentRepository: StudentRepository) {

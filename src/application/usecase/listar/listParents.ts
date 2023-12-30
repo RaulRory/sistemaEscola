@@ -1,4 +1,4 @@
-import { ParentsRepository } from "../../repository/parentsRepository";
+import { ParentsRepository } from "../../repository/parentsRepository.js";
 
 export class ListParents {
     constructor(readonly parentsRepository: ParentsRepository) {

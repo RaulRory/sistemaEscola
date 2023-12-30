@@ -1,12 +1,17 @@
-import { DataParentsProps, ParentsRepository } from "../../application/repository/parentsRepository";
-import { Parents } from "../../domain/parents";
-import { Database } from "../database/database";
+import { DataParentsProps, ParentsRepository } from "../../application/repository/parentsRepository.js";
+import { Parents } from "../../domain/parents.js";
+import { Database } from "../database/database.js";
 
 export class ParentsDatabase implements ParentsRepository {
     #database: Database;
 
     constructor(database: Database) {
         this.#database = database;
+    }
+
+    listAll() {
+        const parents = this.#database.list();
+        return parents;
     }
 
     async create(dataParents: DataParentsProps): Promise<Parents> {

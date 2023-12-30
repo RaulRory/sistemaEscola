@@ -1,4 +1,4 @@
-import { Address } from "../application/repository/parentsRepository";
+import { Address } from "../application/repository/parentsRepository.js";
 
 export class Parents {
     

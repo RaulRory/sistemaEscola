@@ -1,4 +1,4 @@
-import { Parents } from "../../domain/parents";
+import { Parents } from "../../domain/parents.js";
 
 export interface Address {
     street: string;
@@ -19,5 +19,5 @@ export interface DataParentsProps {
 
 export interface ParentsRepository {
     create (dataParents: DataParentsProps): Promise<Parents>;
-    listAll (): Promise<Parents[]>;
+    listAll (): unknown[];
 }

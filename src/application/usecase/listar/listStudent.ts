@@ -1,4 +1,4 @@
-import { StudentRepository } from "../../repository/studentRepository";
+import { StudentRepository } from "../../repository/studentRepository.js";
 
 export class ListStudent {
     constructor(readonly studentRepository: StudentRepository) {

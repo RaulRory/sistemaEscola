@@ -1,4 +1,4 @@
-import { ClassRepository, DataClassProps } from "../../repository/classRepository";
+import { ClassRepository, DataClassProps } from "../../repository/classRepository.js";
 
 export class CreateClass {
     constructor(readonly classRepository: ClassRepository) {}

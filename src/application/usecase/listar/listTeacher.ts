@@ -1,4 +1,4 @@
-import { TeacherRepository } from "../../repository/teacherRepository";
+import { TeacherRepository } from "../../repository/teacherRepository.js";
 
 export class ListTeacher {
     constructor(readonly teacherRepository: TeacherRepository) {
